@@ -3,10 +3,10 @@ defmodule Curltime.Mixfile do
 
   def project do
     [app: :curltime,
-     version: "0.1.0",
+     version: "1.0.0",
      elixir: "~> 1.3",
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
+     description: description(),
+     package: package(),
      deps: deps()]
   end
 
@@ -28,5 +28,20 @@ defmodule Curltime.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     []
+  end
+
+  defp description do
+    """
+    curltime is an Elixir package allows you to easily get website response times.
+    """
+  end
+
+  defp package do
+    [# These are the default files included in the package
+     name: :sigma,
+     files: ["lib", "mix.exs", "README*", "LICENSE*"],
+     maintainers: ["Sergio Tapia"],
+     licenses: ["MIT"],
+     links: %{"GitHub" => "https://github.com/sergiotapia/curltime"}]
   end
 end
