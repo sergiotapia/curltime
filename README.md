@@ -1,24 +1,41 @@
-# Curltime
+# curltime
 
-**TODO: Add description**
+curltime is an Elixir package allows you to easily get website response times.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+The package can be installed as:
 
   1. Add `curltime` to your list of dependencies in `mix.exs`:
 
     ```elixir
     def deps do
-      [{:curltime, "~> 0.1.0"}]
+      [{:curltime, "~> 1.0"}]
     end
     ```
 
-  2. Ensure `curltime` is started before your application:
+## Usage
+
+Easily fetch the response times of any website or resource.
+
+```
+Curltime.time_namelookup("http://sergiotapia.me")
+Curltime.time_connect("http://sergiotapia.me")
+Curltime.time_appconnect("http://sergiotapia.me")
+Curltime.time_pretransfer("http://sergiotapia.me")
+Curltime.time_redirect("http://sergiotapia.me")
+Curltime.time_starttransfer("http://sergiotapia.me")
+Curltime.time_total("http://sergiotapia.me")
+```
+
+## Installation
+
+The package can be installed as:
+
+  1. Add `sigma` to your list of dependencies in `mix.exs`:
 
     ```elixir
-    def application do
-      [applications: [:curltime]]
+    def deps do
+      [{:curltime, "~> 1.0"}]
     end
     ```
-
