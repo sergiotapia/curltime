@@ -38,7 +38,7 @@ defmodule Curltime.Mixfile do
 
   defp package do
     [# These are the default files included in the package
-     name: :sigma,
+     name: :curltime,
      files: ["lib", "mix.exs", "README*", "LICENSE*"],
      maintainers: ["Sergio Tapia"],
      licenses: ["MIT"],
