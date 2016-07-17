@@ -27,15 +27,3 @@ Curltime.time_redirect("http://sergiotapia.me")
 Curltime.time_starttransfer("http://sergiotapia.me")
 Curltime.time_total("http://sergiotapia.me")
 ```
-
-## Installation
-
-The package can be installed as:
-
-  1. Add `sigma` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:curltime, "~> 1.0"}]
-    end
-    ```
