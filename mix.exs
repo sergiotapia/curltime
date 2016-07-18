@@ -3,7 +3,7 @@ defmodule Curltime.Mixfile do
 
   def project do
     [app: :curltime,
-     version: "1.0.2",
+     version: "1.0.3",
      elixir: "~> 1.3",
      description: description(),
      package: package(),
@@ -32,7 +32,7 @@ defmodule Curltime.Mixfile do
 
   defp description do
     """
-    curltime is an Elixir package allows you to easily get website response times.
+    curltime is an Elixir package that allows you to easily get website response times.
     """
   end
 

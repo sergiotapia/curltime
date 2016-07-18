@@ -28,7 +28,7 @@ defmodule Curltime do
   end
 
   def command(url, measurement) do
-    args = ["-w", "@lib/curl-format.txt", "-o", "/dev/null", "-s", url]
+    args = ["-w", "%{time_namelookup}, %{time_connect}, %{time_appconnect}, %{time_pretransfer}, %{time_redirect}, %{time_starttransfer}, %{time_total}", "-o", "/dev/null", "-s", url]
     {result, _} = System.cmd("curl", args, [])
     values = result |> String.split(",")
     case measurement do

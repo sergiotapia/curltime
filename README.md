@@ -1,6 +1,6 @@
 # curltime
 
-curltime is an Elixir package allows you to easily get website response times.
+curltime is an Elixir package that allows you to easily get website response times.
 
 ## Installation
 
