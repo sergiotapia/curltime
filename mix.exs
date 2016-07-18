@@ -3,7 +3,7 @@ defmodule Curltime.Mixfile do
 
   def project do
     [app: :curltime,
-     version: "1.0.0",
+     version: "1.0.1",
      elixir: "~> 1.3",
      description: description(),
      package: package(),
@@ -39,7 +39,7 @@ defmodule Curltime.Mixfile do
   defp package do
     [# These are the default files included in the package
      name: :curltime,
-     files: ["lib", "mix.exs", "README*", "LICENSE*"],
+     files: ["lib", "config/curl-format.txt", "mix.exs", "README*", "LICENSE*"],
      maintainers: ["Sergio Tapia"],
      licenses: ["MIT"],
      links: %{"GitHub" => "https://github.com/sergiotapia/curltime"}]
