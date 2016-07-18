@@ -3,7 +3,7 @@ defmodule Curltime.Mixfile do
 
   def project do
     [app: :curltime,
-     version: "1.0.3",
+     version: "1.0.4",
      elixir: "~> 1.3",
      description: description(),
      package: package(),

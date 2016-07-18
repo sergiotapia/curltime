@@ -32,14 +32,14 @@ defmodule Curltime do
     {result, _} = System.cmd("curl", args, [])
     values = result |> String.split(",")
     case measurement do
-      "time_namelookup" -> Enum.at(values, 0)
-      "time_connect" -> Enum.at(values, 1)
-      "time_appconnect" -> Enum.at(values, 2)
-      "time_pretransfer" -> Enum.at(values, 3)
-      "time_redirect" -> Enum.at(values, 4)
-      "time_starttransfer" -> Enum.at(values, 5)
-      "time_total" -> Enum.at(values, 6)
-      _ -> -1
+      "time_namelookup" -> Enum.at(values, 0) |> String.trim
+      "time_connect" -> Enum.at(values, 1) |> String.trim
+      "time_appconnect" -> Enum.at(values, 2) |> String.trim
+      "time_pretransfer" -> Enum.at(values, 3) |> String.trim
+      "time_redirect" -> Enum.at(values, 4) |> String.trim
+      "time_starttransfer" -> Enum.at(values, 5) |> String.trim
+      "time_total" -> Enum.at(values, 6) |> String.trim
+      _ -> "-1"
     end
   end
 end
